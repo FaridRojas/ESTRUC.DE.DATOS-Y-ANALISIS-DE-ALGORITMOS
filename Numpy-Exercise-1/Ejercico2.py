@@ -1,6 +1,5 @@
 import numpy as np
 import random
-import string
 import names
 
 estudiantes = np.empty((6500, 5), dtype=object)
@@ -29,7 +28,7 @@ for estudiante in estudiante_por_promedios:
 print("\nTotal de estudiantes: ",len(estudiante_por_promedios))
 
 estudiantes_antes_1990 = estudiantes[estudiantes[:,4].astype(int) < 1990]
-estudiantes_condicionales = estudiantes_antes_1990[estudiantes_antes_1990[:,2].astype(float) < 3]
+estudiantes_condicionales = estudiantes_antes_1990[(estudiantes_antes_1990[:,2].astype(float) < 3.3) & (estudiantes_antes_1990[:,2].astype(float) > 2.7)]
 
 print("\nCódigo y nombre de los estudiantes que ingresaron antes de 1990 y están condicionales:\n")
 

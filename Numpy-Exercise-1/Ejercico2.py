@@ -13,7 +13,7 @@ estudiantes = np.empty((6500, 5), dtype=object)
 
 estudiantes[:, 0] = np.random.randint(2000000, 3000000, size=6500)
 estudiantes[:, 1] = [names.get_full_name() for i in range(6500)]
-estudiantes[:, 2] = np.around(np.random.uniform(2.8, 5, size=6500), decimals=1)
+estudiantes[:, 2] = np.around(np.random.uniform(0, 5, size=6500), decimals=1)
 estudiantes[:, 3] = np.random.randint(10, 69, size=6500)
 estudiantes[:, 4] = np.random.randint(1980, 2024, size=6500)
 

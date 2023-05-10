@@ -3,7 +3,7 @@ $estudiantes = array();
 for ($i = 0; $i < 6500; $i++) {
     $estudiantes[$i] = array(
         rand(2000000, 3000000),
-        "Nombre del estudiante"
+        "Nombre del estudiante",
         round(rand(0, 50) / 10, 1),
         rand(10, 68),
         rand(1980, 2023)

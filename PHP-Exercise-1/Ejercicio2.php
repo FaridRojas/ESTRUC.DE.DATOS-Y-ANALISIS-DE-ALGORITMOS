@@ -19,7 +19,7 @@ for ($i = 0; $i < 6500; $i++) {
         rand(1980, 2023)
     );
 }
-$codigo_carrera = 12;
+$codigo_carrera = rand(10, 68);
 
 echo "Ingrese el código de la carrera a listar (los codigos de carreras van de 10 a 68): " .$codigo_carrera."<br>";
 

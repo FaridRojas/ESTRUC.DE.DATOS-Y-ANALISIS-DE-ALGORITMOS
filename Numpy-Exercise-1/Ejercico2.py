@@ -16,6 +16,8 @@ estudiantes[:, 2] = np.around(np.random.uniform(0, 5, size=6500), decimals=1)
 estudiantes[:, 3] = np.random.randint(10, 69, size=6500)
 estudiantes[:, 4] = np.random.randint(1980, 2024, size=6500)
 
+# EL CODIGO PUEDE TARDAR UN TIEMPO EN EJECUTARSE
+
 codigo_carrera = input("Ingrese el código de la carrera a listar (los codigos de carreras van de 10 a 68): \n")
 estudiante_por_carreras = estudiantes[estudiantes[:,3].astype('str') == codigo_carrera]
 estudiante_por_promedios = estudiante_por_carreras[estudiante_por_carreras[:,2].astype(float) >= 4]

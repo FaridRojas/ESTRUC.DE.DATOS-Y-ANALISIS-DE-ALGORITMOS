@@ -1,9 +1,19 @@
 <?php
 $estudiantes = array();
+
+function generate_random_name($first_names, $last_names) {
+    $first_name = $first_names[array_rand($first_names)];
+    $last_name = $last_names[array_rand($last_names)];
+    return $first_name . ' ' . $last_name;
+}
+
+$first_names = ['Emma', 'Olivia', 'Ava', 'Isabella', 'Sophia', 'Mia', 'Charlotte', 'Amelia', 'Harper', 'Evelyn', 'Abigail', 'Emily', 'Elizabeth', 'Mila', 'Ella', 'Avery', 'Sofia', 'Camila', 'Aria', 'Scarlett', 'Victoria', 'Madison', 'Luna', 'Grace', 'Chloe', 'Penelope', 'Layla', 'Riley', 'Zoey', 'Nora','Lily','Eleanor','Hannah','Lillian','Addison','Aubrey','Ellie','Stella','Natalie','Zoe','Leah'];
+$last_names = ['Smith', 'Johnson', 'Williams', 'Brown', 'Jones', 'Garcia', 'Miller', 'Davis', 'Rodriguez', 'Martinez','Hernandez','Lopez','Gonzalez','Wilson','Anderson','Taylor','Thomas','Jackson','White','Harris','Martin','Thompson','Garcia','Martinez','Robinson','Clark','Rodriguez','Lewis','Lee','Walker'];
+
 for ($i = 0; $i < 6500; $i++) {
     $estudiantes[$i] = array(
         rand(2000000, 3000000),
-        "Nombre del estudiante",
+        generate_random_name($first_names, $last_names),
         round(rand(0, 50) / 10, 1),
         rand(10, 68),
         rand(1980, 2023)

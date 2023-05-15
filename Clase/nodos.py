@@ -15,7 +15,7 @@ class Nodo:
     #Metodo Cambiar el valor    
     def cambiar_valor(self,nuevo_valor):
         self.valor = nuevo_valor
-        
+            
 Nodo1 = Nodo("A")
 Nodo2 = Nodo("C")
 
@@ -31,4 +31,5 @@ Nodo1.devolver_valor()
 
 Nodo1.asignar_siguiente(Nodo2)
 
-print(Nodo1.siguiente)
+Nodo1.siguiente.devolver_valor()
+

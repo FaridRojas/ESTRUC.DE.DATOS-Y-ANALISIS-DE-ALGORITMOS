@@ -43,7 +43,7 @@ class linked_list:
         curr.next = node(data=data)
     
     # Método para eleminar nodos
-    def delete_node(self, key):
+    def borrar_nodo(self, key):
         curr = self.head
         prev = None
         while curr and curr.data != key:

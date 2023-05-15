@@ -31,9 +31,6 @@ class linked_list:
     def agregar_inicio(self, data):
         self.head = node(data=data, next=self.head)  
 
-    # Método para verificar si la estructura de datos esta vacia
-    def is_empty(self):
-        return self.head == None
 
     # Método para agregar elementos al final de la linked list
     def agregar_final(self, data):
